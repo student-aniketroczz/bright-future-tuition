@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bright Future Tution Centre | Classes 6-12</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <style>
+            :root{
+                --main: #1e4fa3;
+                --accent: #ffc83d;
+                --light: #f3f7ff;
+                --dark: #1a2238;
+                --white: #ffffff;
+            }
+
+            *{margin: 0; padding: 0;box-sizing: border-box; }
+            body{font-family: 'Poppins', sans-serif; color: var(--dark); background: var(--white); line-height: 1.6; }
+            section {padding: 70px 20px;}
+            .container {max-width: 1100px; margin: 0 auto; }
+            h2{ text-align: center;font-size: 2rem; color: var(--main); margin-bottom: 10px;}
+            .subtitle { text-align: center; margin-bottom: 40px; color: #5a6480; }
+
+            /* NAVBAR */
+
+            nav{ background: var(--main); padding: 15px 20px; position: sticky; top: 0; z-index: 10; }
+            nav .container { display: flex; justify-content: space-between; align-items: center;}
+            .logo {font-size: 1.3rem; font-weight: 700; color: var(--white);}
+            nav ul{ list-style: none; display: flex; gap: 25px; }
+            nav a { text-decoration: none; color: var(--white); font-weight: 600;}
+            nav a:hover { color: var(--accent); }
+
+            .hero { background: linear-gradient(135deg, var(--main), #3b7be0); color: var(--white); text-align: center; padding: 110px 20px; }
+            .hero h1 { font-size: 2.6rem; margin-bottom: 10px; }
+            .hero p { font-size: 1.15rem; margin-bottom: 30px; }
+            .hero .highlight { color: var(--accent); }
+
+            /* BUTTON */
+            .btn { display: inline-block; background: var(--accent); color: var(--dark); padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: 0.3s; }
+            .btn:hover { background: var(--white); }
+
+            /* COURSES */
+            .courses { background: var(--light); }
+            .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+            .course-card { background: var(--white); border-radius: 15px; padding: 30px 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); transition: 0.3s; }
+            .course-card:hover { transform: translateY(-6px); }
+            .badge { display: inline-block; background: var(--accent); font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 10px; }
+            .course-card h3 { color: var(--main); margin-bottom: 10px; }
+            .course-card ul { padding-left: 18px; margin-bottom: 15px; }
+            .fee { font-size: 1.3rem; font-weight: 700; }
+            .fee span { font-size: 0.9rem; font-weight: 400; color: #5a6480; }
+
+            /* TEACHERS */
+            .teacher-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; text-align: center; }
+            .teacher { padding: 25px; border: 2px solid var(--light); border-radius: 15px; }
+            .avatar { width: 90px; height: 90px; border-radius: 50%; background: var(--main); color: var(--white); font-size: 2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; }
+            .teacher h3 { margin-bottom: 3px; }
+            .subject { color: var(--main); font-weight: 600; }
+            .exp { font-size: 0.9rem; color: #5a6480; }
+
+            /* DEMO FORM */
+            .demo { background: var(--main); color: var(--white); }
+            .demo h2 { color: var(--accent); }
+            .demo .subtitle { color: #d6e2ff; }
+            .demo-form { max-width: 500px; margin: 0 auto; background: var(--white); padding: 30px; border-radius: 15px; }
+            .demo-form label { display: block; color: var(--dark); font-weight: 600; margin-bottom: 5px; }
+            .demo-form input, .demo-form select { width: 100%; padding: 12px; border: 2px solid #dde5f5; border-radius: 8px; font-family: inherit; font-size: 1rem; margin-bottom: 18px; }
+            .demo-form input:focus, .demo-form select:focus { outline: none; border-color: var(--main); }
+            .demo-form button { width: 100%; border: none; cursor: pointer; font-size: 1rem; }
+
+/* FOOTER */
+footer { text-align: center; padding: 20px; background: var(--dark); color: #aab4cc; font-size: 0.9rem; }
+
+            /*MOBILE */
+            @media (max-width: 700px){
+                nav ul { display: none; }
+                .hero h1{ font-size: 1.9rem;}
+
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav>
+            <div class="container">
+                <div class="logo">🎓 Bright Future</div>
+                <ul>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="#demo">Free Demo</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <h1>Score Higher with <span class="highlight">Expert Teachers</span></h1>
+            <p>Tuition for Classes 6–12 · Maths, Science & English · Small batches</p>
+            <a href="#demo" class="btn">Book a Free Demo Class</a>
+        </header>
+
+        <!-- COURSES -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <h2>Our Courses</h2>
+                <p class="subtitle">Choose the right batch for your class</p>
+                <div class="course-grid">
+
+                <div class="course-card">
+                    <span class="badge">Classes 6–8</span>
+                    <h3>Foundation Batch</h3>
+                    <ul>
+                        <li>Maths, Science & English</li>
+                        <li>Weekly tests</li>
+                        <li>Homework support</li>
+                    </ul>
+                <p class="fee">₹1,500 <span>/ month</span></p>
+
+                <div class="course-card">
+  <span class="badge">Classes 9–10</span>
+  <h3>Board Exam Batch</h3>
+  <ul>
+    <li>Maths & Science focus</li>
+    <li>Previous year papers</li>
+    <li>Doubt-clearing sessions</li>
+  </ul>
+  <p class="fee">₹2,000 <span>/ month</span></p>
+</div>
+
+<div class="course-card">
+  <span class="badge">Classes 11–12</span>
+  <h3>JEE / NEET Foundation</h3>
+  <ul>
+    <li>Physics, Chemistry, Maths/Biology</li>
+    <li>Weekly mock tests</li>
+    <li>Personal mentoring</li>
+  </ul>
+  <p class="fee">₹3,500 <span>/ month</span></p>
+</div>
+            </div>
+
+      
+
+            </div>
+        </div>
+        </section>
+
+      
+        <!-- TEACHERS -->
+<section id="teachers">
+  <div class="container">
+    <h2>Meet Our Teachers</h2>
+    <p class="subtitle">Experienced, friendly and result-focused</p>
+    <div class="teacher-grid">
+
+      <div class="teacher">
+        <div class="avatar">RS</div>
+        <h3>R. Sharma</h3>
+        <p class="subject">Mathematics</p>
+        <p class="exp">M.Sc Maths · 12 years experience</p>
+      </div>
+      <div class="teacher">
+  <div class="avatar">PI</div>
+  <h3>P. Iyer</h3>
+  <p class="subject">Physics & Chemistry</p>
+  <p class="exp">M.Sc Physics · 8 years experience</p>
+</div>
+
+<div class="teacher">
+  <div class="avatar">AK</div>
+  <h3>A. Khan</h3>
+  <p class="subject">English</p>
+  <p class="exp">M.A English · 10 years experience</p>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- DEMO FORM -->
+<section id="demo" class="demo">
+  <div class="container">
+    <h2>Book a Free Demo Class</h2>
+    <p class="subtitle">Fill in the details. We'll call you within 24 hours.</p>
+
+    <form class="demo-form" id="demoForm">
+      <label for="name">Student Name</label>
+      <input type="text" id="name" placeholder="e.g. Rahul Verma" required>
+
+      <label for="phone">Parent's Phone</label>
+      <input type="tel" id="phone" placeholder="10-digit mobile number" required>
+
+      <label for="classSelect">Class</label>
+      <select id="classSelect" required>
+        <option value="">Select class</option>
+        <option>Class 6–8</option>
+        <option>Class 9–10</option>
+        <option>Class 11–12</option>
+      </select>
+
+      <button type="submit" class="btn">📩 Book via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>© 2026 Bright Future Tuition Centre. All rights reserved.</footer>
+
+<script>
+  // Runs when the form is submitted
+  document.getElementById("demoForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop the page from reloading
+
+    // Read what the user typed
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const cls = document.getElementById("classSelect").value;
+
+    // Build the WhatsApp message
+    const message = `Hi! I want to book a free demo class.%0AName: ${name}%0APhone: ${phone}%0AClass: ${cls}`;
+
+    
+    window.open(`https://wa.me/916204546810?text=${message}`, "_blank");
+  });
+</script>
+    </body>
+</html>
